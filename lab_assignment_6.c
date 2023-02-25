@@ -1,9 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int search(int numbers[], int low, int high, int value) 
-{
-	return -1;
-}
+
+int search(int numbers[], int low, int high, int value) { 
+
+    int newValue;
+
+    for (int i = low; i <= high; i++){
+        if (numbers[i] == value){
+            newValue = value;
+        }else if(numbers[i] != value){
+            newValue = -1;
+        }
+    }
+    return newValue;
+} 
 
 void printArray(int numbers[], int sz)
 {
