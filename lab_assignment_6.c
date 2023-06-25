@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-int search(int numbers[], int low, int high, int value) { 
+int search(int numbers[], int low, int high, int ) { 
 
     int newValue;
 
